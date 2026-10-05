@@ -1,0 +1,39 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    margin:0; /*jarak antara konten kode ke batas luar (layar)*/
+    background-color: aliceblue;
+    color:black;
+} 
+
+/* ID selector */
+#hero{
+    padding: 32px; /*jarak antara elemen dengan konten di dalam*/
+    text-align: center;
+    background-color: #ff9900;
+    color: #ffffff
+}
+
+/* Class selector */
+.card{
+    background: whitesmoke;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px; color: rgb(48, 46, 46)
+}
+
+/* multiple class */
+.card utama{
+    border-left: 10px solid #ff0000 ;
+}
+
+/* decendant class */
+.card h2{
+    color: rgb(255, 72, 0)
+}
+
+.card .text-penting{
+    color:brown;
+    font-weight:bold
+}

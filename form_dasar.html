@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Dasar</title>
+</head>
+<body>
+    <fieldset>
+        <h1>Formulir Data Mahasiswa Siswa Sistem Infromasi</h1><br>
+
+        <form action="" method="post"><br>
+            <fieldset>
+                <label for="nama">Nama Mahasiswa</label><br>
+                <input type="text" name="nama_mhs" placeholder="Ketik Nama Anda. . ." minlength="3" required autofocus><br>
+                <!-- required : field input yang bersifat wajib diisi -->
+                <!-- autofocus: prioritas pertama kursor terletak  -->
+                <label for="nim">NIM</label><br>
+                <input type="text" name="nim" placeholder="Ketik NIM Anda. . ." required><br>
+
+                <label for="email">E-mail</label><br>
+                <input type="email" name="email" placeholder="Sesuai Format E-mail" required><br>
+
+                <label for="jenis_kelamin">Jenis Kelamin</label><br>
+                <input type="radio" name="jenis_kelamin" value="L" required> Laki-laki
+                <input type="radio" name="jenis_kelamin" value="P" required> Perempuan<br>
+
+                <label for="angkatan">Angkatan</label><br>
+                <input type="number" name="angkatan" min="2020" max="2030" placeholder="Dengan angka" required><br>
+
+                <label for="prodi">Program Studi</label><br>
+                <select name="prodi" id="prodi"><br>
+                    <option value="">Pilih Program Studi</option><br>
+                    <option value="SI">Sistem Informasi</option><br>
+                    <option value="IF">Informatika</option><br>
+                    <option value="TE">Teknik Elektro</option><br>
+                </select><br>
+            </fieldset>
+            <br>
+        
+            <fieldset>
+                <label for="topik">Topik yang diminati</label><br>
+                <label><input type="checkbox" name="topik[]" value="html">HTML</label><br>
+                <label><input type="checkbox" name="topik[]" value="css">CSS</label><br>
+                <label><input type="checkbox" name="topik[]" value="javascript">Javascript</label><br>
+
+                <label for="alasan">Alasan mengikuti kegiatan</label><br>
+                <textarea name="alasan" id="alasan" cols="20" rowspan="10"></textarea><br>
+            </fieldset>
+
+            <br>
+            <input type="checkbox" name="persetujuan" required>
+            <label>Saya menyatakan data yang diisi benar</label><br>
+            <br>
+            <button type="submit">Kirim</button>
+            <button type="reset">Batal</button>
+
+
+        </form>
+    </fieldset>
+</body>
+</html>
